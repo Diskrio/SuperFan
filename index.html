@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>YouTube</title>
+  </head>
+  <body>
+    <!-- to show images in the 'faces' folder you would write "images/faces/jack.png" -->
+    <div class="video-col">
+      <div class="square white center-content">
+        <img src="images/pat.png" onclick="patVideo()"   />
+      </div>
+      <div class="square white center-content">
+        <img src="images/dash.png" onclick="dashVideo()"   />
+      </div>
+      <div class="square white center-content">
+        <img src="images/ghans.png" onclick="avghansVideo()"   />
+      </div>
+    </div>
+    <div class="video-play light-grey">
+      <div class="videoscreen light-screen center-content">
+        <iframe
+        id="mainvideo"
+          width="100%"
+          height=100%"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        
+      </div>
+      <div class="taskbar orange">
+        <div class="buttons white center-content">
+          
+          <img
+            id="bigbutton"
+            src="images/bigbutton.png"
+            onclick="likeButton()"   class="clickable shadow small-img"
+          />
+        </div>
+        <div class="buttons white center-content">
+          <img
+            id="dislike"
+            src="images/dislikebutton.png"
+            onclick="dislikeButton()"   class="clickable shadow small-img"
+          />
+        </div>
+
+        <div class="buttons white center-content">
+          <img id="subButton" src="images/nosub.png" onclick="subButton()"   class="clickable shadow small-img" />
+        </div>
+        <div class="buttons white center-content">
+        <img
+        id="reset"
+        src="images/reset.png"
+        onclick="resetAll()"   class="clickable shadow small-img"
+      />
+    </div>
+      </div>
+    </div>
+    <div class="video-col">
+      <div class="square white center-content">
+        <img src="images/pelo.png" onclick="peloVideo()"  />
+        
+      </div>
+      <div class="square white center-content">
+        <img src="images/mark.png" onclick="markVideo()"  />
+      </div>
+      <div class="square white center-content">
+        <img src="images/beef.png" onclick="changeVideo()"  />
+      </div>
+    </div>
+
+    <audio src="sounds/click.wav" id="my-click"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
